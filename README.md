@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Deploy to heroku
 
 - add “engines” into package.json file to specify node and npm version
+
 ```
 {
   "name": "fuse-react-app",
@@ -15,6 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   ........
 }
 ```
+
 - add `"react/jsx-no-bind": "off"` rule to `.eslintrc` after line 65
 - under Setting tab in heroku.com pls add https://github.com/mars/create-react-app-buildpack as a buildpack
 - run `heroku stack:set heroku-20` to downgrade heroku stack to 20 because https://github.com/mars/create-react-app-buildpack webpack does - not support the latest 22
@@ -45,7 +47,7 @@ Please check this link for more info: https://classic.yarnpkg.com/en/docs/instal
 
 In the project directory, you can run:
 
-### `yarn start`
+## `yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
